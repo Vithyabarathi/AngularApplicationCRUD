@@ -1,0 +1,26 @@
+<div style="width:500px">
+    <div class="form-group">
+        <label>CourseID</label>
+        <input type="number" class="form-control" id="txtCourseId" placeholder="Enter CourseId"
+            [(ngModel)]="txtCourseId">
+    </div>
+    <div class="form-group">
+        <label>Course Name</label>
+        <input type="text" class="form-control" id="txtCourseName" placeholder="CourseName" [(ngModel)]="txtCourseName">
+    </div>
+    <div class="form-group">
+        <label>Trainer Name</label>
+        <input type="text" class="form-control" id="txtTrainer" placeholder="Trainer" [(ngModel)]="txtTrainer">
+    </div>
+    <div class="form-group">
+        <label>Fees</label>
+        <input type="number" class="form-control" id="txtFees" placeholder="Fees" [(ngModel)]="txtFees">
+    </div>
+    <div class="form-group">
+        <label>Rating</label>
+        <input type="text" class="form-control" id="txtRating" [(ngModel)]="txtRating">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="SaveCourse()">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="UpdateCourse()">Update</button>
+    <button type="submit" class="btn btn-primary" (click)="DeleteCourse()">Delete</button>
+</div>
